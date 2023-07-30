@@ -1,3 +1,6 @@
+console.log('Hi');
+
+//Have the computer make a choice.
 const getComputerChoice = (max = 3) => {
 
     let numChoice = Math.floor(Math.random() * Math.floor(max));
@@ -11,6 +14,8 @@ const getComputerChoice = (max = 3) => {
     else return 'scissors'
   }
   
+
+//The user should be able to choose ‘rock’, ‘paper’, or ‘scissors’ when the game starts.
   const getUserChoice = (userInput) => {
     userInput = userInput.toLowerCase();
   
@@ -27,6 +32,7 @@ const getComputerChoice = (max = 3) => {
     else console.log("Error")
   }
   
+//This function will compare the two choices played and then return if the human player won, lost, or tied.
   const determineWinner = (userChoice, computerChoice) => {
   
     if (userChoice === computerChoice) {
